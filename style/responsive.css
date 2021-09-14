@@ -1,0 +1,42 @@
+@media screen and (max-width: 850px) {
+    header .container-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-filme-principal {
+        width: 200px;
+    }
+
+    .filme-principal .descricao {
+        width: 50%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .filme-principal .botao {
+        background-color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-family: 'Netflix Sans Bold';
+    
+        cursor: pointer;
+        transition: .3s ease all;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile-navigation li{
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .mobile-navigation {
+        display: none;
+    }
+}

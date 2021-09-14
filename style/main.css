@@ -1,0 +1,129 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background-color:var(--preta);
+    font-family: 'Netflix Sans Light';
+    font-weight:normal;
+    font-size: 15px;
+    color: white;
+}
+
+header .container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 30px;
+    margin: 0px 10px 0px 10px;
+}
+
+header .menu-esquerdo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu-esquerdo h2 {
+    margin-right: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #eaeaea;
+    margin-right: 10px;
+    
+    transition: .3s ease all;
+}
+
+header nav a:hover{
+    color: #737375;
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.logo-filme-principal {
+    width: 350px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+}
+
+.filme-principal .descricao {
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.filme-principal .botao {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-family: 'Netflix Sans Bold';
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover {
+    background-color: #ffffffcb;
+}
+
+.filme-principal .botao i {
+    margin-right: 10px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin: 30px 20px 0px 30px;
+}
+
+.carrossel-filmes h2 {
+    margin-bottom: 20px;
+}
+
+.nav-menu-mobile {
+    display: none;
+}
