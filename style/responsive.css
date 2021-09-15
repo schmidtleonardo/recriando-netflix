@@ -26,6 +26,15 @@
         transition: .3s ease all;
     }
 
+    .menu-esquerdo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container-nav {
+        height: auto;
+    }
+
     .desktop {
         display: none;
     }
@@ -33,6 +42,71 @@
     .mobile-navigation li{
         list-style-type: none;
     }
+
+    .dropdown {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+
+    background-color: rgb(20, 20, 20);
+    transition: .3s ease all;
+}
+
+/* The sub dropdown */
+.dropdown ul {
+    /* Border */
+    border: 1px solid rgba(20, 20, 20, 0.3);
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    width: 200px;
+}
+
+/* The second level sub dropdown */
+.dropdown ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.dropdown li:hover {
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+    display: block;
+}
+
+.dropdown a:hover {
+    color: #eaeaea;
+}
 }
 
 @media screen and (min-width: 851px) {
